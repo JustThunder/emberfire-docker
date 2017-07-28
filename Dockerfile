@@ -10,4 +10,4 @@ RUN apk add --no-cache git make gcc g++ openssl-dev \
   && rm -rf git-crypt \
   && npm config set spin false \
   && npm install -g bower ember-cli firebase-tools phantomjs-prebuilt \
-  && apk remove make gcc g++ openssl-dev
+  && apk del make gcc g++ openssl-dev
