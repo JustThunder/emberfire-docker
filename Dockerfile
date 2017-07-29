@@ -1,7 +1,7 @@
 FROM node:6-alpine
 MAINTAINER Eric Higgins <erichiggins@gmail.com>
 
-RUN apk add --no-cache git make gcc g++ openssl-dev \
+RUN apk add --no-cache git make gcc g++ openssl-dev openssl \
   && git clone https://github.com/AGWA/git-crypt.git \
   && cd git-crypt \
   && make \
