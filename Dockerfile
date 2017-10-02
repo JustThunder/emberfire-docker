@@ -10,5 +10,5 @@ RUN apk add --no-cache git make gcc g++ openssl-dev openssl yarn \
   && rm -rf git-crypt \
   && yarn config set spin false \
   && yarn install -g bower ember-cli firebase-tools phantomjs-prebuilt \
-  && yarn cache clean
+  && yarn cache clean \
   && apk del make gcc g++ openssl-dev
