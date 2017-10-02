@@ -1,4 +1,4 @@
-FROM node:6-alpine
+FROM node:8.6-alpine
 MAINTAINER Eric Higgins <erichiggins@gmail.com>
 
 RUN apk add --no-cache git make gcc g++ openssl-dev openssl yarn \
